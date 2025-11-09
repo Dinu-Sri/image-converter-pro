@@ -1,0 +1,52 @@
+========================================
+  Image Converter & Cutter Pro
+  PORTABLE EXECUTABLE GUIDE
+========================================
+
+Your portable application is ready!
+
+LOCATION:
+  dist\ImageConverterPro.exe
+
+HOW TO USE:
+1. Navigate to the "dist" folder
+2. Double-click "ImageConverterPro.exe" to run
+3. No Python installation needed!
+
+MAKING IT TRULY PORTABLE:
+- Copy "ImageConverterPro.exe" to a USB drive
+- Run it on any Windows computer
+- No installation or admin rights required
+- All features work standalone
+
+FILE SIZE:
+- The .exe file is large (~100-150 MB) because it includes:
+  * Python interpreter
+  * PyQt5 GUI framework
+  * Pillow image processing library
+  * All dependencies bundled together
+
+FEATURES INCLUDED:
+✓ Drag & Drop image support
+✓ Convert to WebP, JPG, PNG
+✓ Resize with web presets (1920px, 1200px, 800px, 400px)
+✓ Custom dimensions and percentage scaling
+✓ Target file size optimization
+✓ Text watermarking
+✓ Metadata stripping
+✓ Image cutting (horizontal/vertical)
+✓ Batch processing
+✓ Compression statistics
+✓ Auto "processed images" folder creation
+✓ Open output folder button
+
+SHARING:
+You can share just the ImageConverterPro.exe file with anyone.
+They don't need Python or any other software installed!
+
+TROUBLESHOOTING:
+- If Windows shows a security warning, click "More info" then "Run anyway"
+- This is normal for unsigned executables
+- The app is safe - it's your own compiled Python code
+
+Made by Dr. Dinu Sri Madusanka

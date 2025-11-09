@@ -1,0 +1,125 @@
+# 📤 Upload to GitHub - Step by Step Guide
+
+## Your repository is ready to upload! Follow these steps:
+
+## Step 1: Create a New Repository on GitHub
+
+1. Go to https://github.com
+2. Click the "+" icon in the top right corner
+3. Select "New repository"
+4. Fill in the details:
+   - **Repository name**: `image-converter-pro` (or your preferred name)
+   - **Description**: "Professional image converter with resize, watermark, and optimization features"
+   - **Visibility**: Public
+   - ❌ **DO NOT** initialize with README, .gitignore, or license (we already have these)
+5. Click "Create repository"
+
+## Step 2: Link Your Local Repository to GitHub
+
+After creating the repository, GitHub will show you commands. Use these:
+
+```bash
+# Replace YOUR_USERNAME with your GitHub username
+# Replace REPO_NAME with your repository name
+
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+git branch -M main
+git push -u origin main
+```
+
+## Step 3: Run These Commands in PowerShell
+
+Open PowerShell in your project folder and run:
+
+```powershell
+cd "c:\Users\User\Desktop\cut and save tool"
+
+# Add your GitHub repository (REPLACE with your actual URL)
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+
+# Rename branch to main
+git branch -M main
+
+# Push to GitHub
+git push -u origin main
+```
+
+## Step 4: After Upload
+
+1. Go to your repository on GitHub
+2. Rename `README_GITHUB.md` to `README.md` on GitHub
+   - Click on `README_GITHUB.md`
+   - Click the pencil icon (Edit)
+   - Change filename from `README_GITHUB.md` to `README.md`
+   - Scroll down and click "Commit changes"
+
+## Step 5: Create a Release (Optional but Recommended)
+
+To share the .exe file:
+
+1. Go to your repository on GitHub
+2. Click "Releases" on the right sidebar
+3. Click "Create a new release"
+4. Fill in:
+   - **Tag version**: `v1.0.0`
+   - **Release title**: `Image Converter Pro v1.0 - Initial Release`
+   - **Description**: Copy features from README
+5. Drag and drop `dist\ImageConverterPro.exe` to attach
+6. Click "Publish release"
+
+## 📝 Quick Reference Commands
+
+```bash
+# Check status
+git status
+
+# Add new files
+git add .
+
+# Commit changes
+git commit -m "Your message"
+
+# Push to GitHub
+git push
+
+# Pull updates
+git pull
+```
+
+## 🎯 What's Included in Your Repository
+
+✅ main.py - Main application
+✅ requirements.txt - Dependencies
+✅ README_GITHUB.md - Documentation
+✅ .gitignore - Excludes build files
+✅ app_icon.ico - Application icon
+✅ app_icon.png - Icon source
+✅ create_icon.py - Icon generator
+
+❌ build/ - Excluded (build artifacts)
+❌ dist/ - Excluded (executable - add to releases instead)
+❌ __pycache__/ - Excluded (Python cache)
+
+## 🔒 Authentication
+
+GitHub may ask for authentication:
+
+**Option 1: Personal Access Token (Recommended)**
+1. Go to GitHub Settings > Developer settings > Personal access tokens
+2. Generate new token (classic)
+3. Select "repo" scope
+4. Use token as password when prompted
+
+**Option 2: GitHub CLI**
+```bash
+gh auth login
+```
+
+## 📞 Need Help?
+
+If you encounter any issues:
+- Check that git is installed: `git --version`
+- Verify remote URL: `git remote -v`
+- Check branch: `git branch`
+
+Your project is ready to go live! 🚀
